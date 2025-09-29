@@ -350,7 +350,7 @@ input[type=checkbox]:checked ~ div.showhide {
     width: 100vw;
     height: 100vh;
     background-color: #323fb9;
-    overflow: auto;
+    overflow: hidden;
 }
 
 #stand {
