@@ -22,6 +22,10 @@ body {
     margin: 0px auto;
 }
 
+table {
+    width: 100%;
+}
+
 td {
     width: 50%;
     text-align: center;
@@ -60,7 +64,7 @@ td img {
 }
 
 .first {
-    left: 15vw;
+    left: 17.5vw;
 }
 
 .first:hover {
@@ -68,7 +72,7 @@ td img {
 }
 
 .second {
-    left: 35vw;
+    left: 37.5vw;
 }
 
 .second:hover {
@@ -76,7 +80,7 @@ td img {
 }
 
 .third {
-    left: 55vw;
+    left: 57.5vw;
 }
 
 .third:hover {
@@ -84,7 +88,7 @@ td img {
 }
 
 .fourth {
-    left: 75vw;
+    left: 77.5vw;
 }
 
 .fourth:hover {
@@ -92,9 +96,9 @@ td img {
 }
 
 .bottomleft {
-    position: absolute;
-    bottom: 10px;
-    left: 25px;
+    position: fixed;
+    bottom: 20px;
+    left: 35px;
 }
 
 h1 {
@@ -205,7 +209,7 @@ h1 {
 .centerLA {
     position: absolute;
     top: 32vh;
-    left: 35vh;
+    left: calc(50vw - 190px);
     z-index: 1;
 }
 
@@ -350,9 +354,10 @@ input[type=checkbox]:checked ~ div.showhide {
 
 #stand {
     background-image: url(LemonadeStand.png);
-    position: absolute; 
+    display: block;
+    margin: auto;
+    position: relative;
     top: 25vh;
-    left: 30vw;
     width: 400px;
     height: 400px;
     image-rendering: pixelated;
@@ -361,11 +366,13 @@ input[type=checkbox]:checked ~ div.showhide {
     background-size: 400px;
 }
 
+
 #scent {
     background-image: url(Scent.png);
-    position: absolute;
-    top: 83vh;
-    left: 42vw;
+    display: block;
+    margin: auto;
+    position: relative;
+    bottom: -59vh;
     width: 150px;
     height: 150px;
     image-rendering: pixelated;
@@ -385,19 +392,23 @@ input[type=checkbox]:checked ~ div.showhide {
 
 .bottomtext {
     position: fixed;
-    top: 60vh;
-    left: 28vw;
+    top: 55vh;
+    left: 35vw;
 }
 
 #grapes {
     background-image: url(Grapes.png);
     position: fixed; 
-    top: calc(50vh - 20.5vh);
-    left: calc(50vw - 10.5vw);
+    /*top: calc(50vh - 20.5vh);
+    left: calc(50vw - 8.5vw);*/
     image-rendering: pixelated;
     background-repeat: no-repeat;
     background-position: center center;
     width: 400px;
     height: 400px;
     background-size: 400px;
+    top:50%;
+    left:50%;
+    margin-top:-200px;
+    margin-left:-100px;
 }
