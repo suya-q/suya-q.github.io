@@ -372,7 +372,7 @@ input[type=checkbox]:checked ~ div.showhide {
     display: block;
     margin: auto;
     position: relative;
-    bottom: -59vh;
+    bottom: -55%;
     width: 150px;
     height: 150px;
     image-rendering: pixelated;
