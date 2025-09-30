@@ -105,6 +105,20 @@ h1 {
     font-size: 120px;
 }
 
+.apple {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 85vh;
+    right: 10vh;
+    /* how to always center this position in window */
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100px;
+    background-image: url(GreenApple.png);
+}
+
 .smallduck {
     position: absolute;
     width: 75px;
