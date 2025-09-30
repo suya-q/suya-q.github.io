@@ -109,7 +109,7 @@ h1 {
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 85vh;
+    bottom: 10vh;
     right: 10vh;
     /* how to always center this position in window */
     image-rendering: pixelated;
