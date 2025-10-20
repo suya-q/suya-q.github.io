@@ -2,3 +2,130 @@ body {
     background-color: #E0CAAD;
     color: black;
 }
+
+input {
+    display: none;
+  }
+  
+  #forkwrapper {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: -5vh;
+    left: 75vw;
+  }
+
+  #fork {
+    width: 350px;
+    height: 350px;
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 350px;
+    background-image: url(Fork.png);
+    transform: rotate(-70deg);
+    z-index: 2;
+  }
+
+  /*#fork:hover {
+    transform: rotate(-80deg);
+  }*/
+
+  #cakewrapper { /* center cake, also why not switching?*/
+    position: fixed;
+    top: 5vh;
+    left: -15vh;
+    width: 1000px;
+    height: 1000px;
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1000px;
+    background-image: url(CakeFull_State1.png);
+    z-index: -1;
+  }
+
+  #forkwrapper > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  #fork1check:checked ~ #forkwrapper > #fork1label {
+    display: none;
+  }
+  
+  #fork1check:checked ~ #forkwrapper {
+    top: 150px;
+    transition: 1s;
+  }
+  
+  #fork1check:checked ~ #cakewrapper {
+    background-image: url(Cake_State2.png);
+  }
+  
+  #fork2check:checked ~ #forkwrapper > #fork2label {
+    display: none;
+  }
+  
+  #fork2check:checked ~ #forkwrapper {
+    top: 300px;
+    transition: 1s;
+  }
+
+  #fork2check:checked ~ #cakewrapper {
+    background-image: url(Cake_State3.png);
+  }
+  
+  #fork3check:checked ~ #forkwrapper > #fork3label {
+    display: none;
+  }
+
+  #fork3check:checked ~ #forkwrapper {
+    top: 400px;
+    transition: 1s;
+  }
+
+  #fork3check:checked ~ #cakewrapper {
+    background-image: url(Cake_State4.png);
+  }
+
+  #fork4check:checked ~ #forkwrapper > #fork4label {
+    display: none;
+  }
+
+  #fork4check:checked ~ #forkwrapper {
+    top: 400px;
+    transition: 1s;
+  }
+
+  #fork4check:checked ~ #cakewrapper {
+    background-image: url(Cake_State5.png);
+  }
+
+  #fork5check:checked ~ #forkwrapper > #fork5label {
+    display: none;
+  }
+
+  #fork5check:checked ~ #forkwrapper {
+    top: 450px;
+    transition: 1s;
+  }
+
+  #fork5check:checked ~ #cakewrapper {
+    background-image: url(Cake_State5.png);
+  }
+
+  #cakewrapper #stillhungry { /* why not showing*/
+    position: fixed; /*how to center*/
+    left: 40vh;
+    top: 40vh;
+    background-image: url(stillhungry.png);
+  }
+
+  #cakewrapper #stillhungry:hover {
+    position: fixed; /*how to center*/
+    left: 40vh;
+    top: 40vh;
+    background-image: url(stillhungryhover.png);
+  }
