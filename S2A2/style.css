@@ -136,8 +136,8 @@ input {
     top:calc(50vh - 12vw);
     z-index: 0;
     width: 30vw;
-    height: 40vh;
-    background-size: 40vh;
+    height: 50vh;
+    background-size: 50vh;
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url(Layers.png);
