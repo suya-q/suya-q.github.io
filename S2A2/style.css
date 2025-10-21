@@ -12,7 +12,7 @@ input {
     height: 100px;
     position: fixed;
     top: -5vh;
-    left: 75vw;
+    right: 40vw;
   }
 
   #fork {
@@ -27,105 +27,123 @@ input {
     z-index: 2;
   }
 
-  /*#fork:hover {
-    transform: rotate(-80deg);
-  }*/
+  #fork:hover { 
+    cursor: grab;
+  }
 
-  #cakewrapper { /* center cake, also why not switching?*/
-    position: fixed;
-    top: 5vh;
-    left: -15vh;
-    width: 1000px;
-    height: 1000px;
-    image-rendering: pixelated;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 1000px;
-    background-image: url(CakeFull_State1.png);
-    z-index: -1;
+  #cakewrapper {
+    width: 50vw;
+    margin-left: 25vw;
+    margin-top: calc(50vh - 25vw);
+  }
+
+  #cakewrapper img {
+    display: none;
+    width: 100%;
   }
 
   #forkwrapper > label {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
   }
   
   #fork1check:checked ~ #forkwrapper > #fork1label {
-    display: none;
+    display: block;
   }
   
   #fork1check:checked ~ #forkwrapper {
-    top: 150px;
+    top: 5vh;
     transition: 1s;
-  }
-  
-  #fork1check:checked ~ #cakewrapper {
-    background-image: url(Cake_State2.png);
-  }
-  
-  #fork2check:checked ~ #forkwrapper > #fork2label {
-    display: none;
   }
   
   #fork2check:checked ~ #forkwrapper {
-    top: 300px;
+    top: 15vh;
     transition: 1s;
   }
-
-  #fork2check:checked ~ #cakewrapper {
-    background-image: url(Cake_State3.png);
+  
+  #fork3check:checked ~ #forkwrapper {
+    top: 25vh;
+    transition: 1s;
+  }
+  
+  #fork4check:checked ~ #forkwrapper {
+    top: 32vh;
+    transition: 1s;
+  }
+  
+  #fork5check:checked ~ #forkwrapper {
+    top: 200px;
+    transition: 1s;
+  }
+  
+  #fork1check:checked ~ #cakewrapper > #cake1 {
+    display: block;
+  }
+  
+  #fork2check:checked ~ #forkwrapper > #fork2label {
+    display: block;
+  }
+  
+  #fork2check:checked ~ #cakewrapper > #cake2 {
+    display: block;
   }
   
   #fork3check:checked ~ #forkwrapper > #fork3label {
-    display: none;
+    display: block;
   }
-
-  #fork3check:checked ~ #forkwrapper {
-    top: 400px;
-    transition: 1s;
+  
+  #fork3check:checked ~ #cakewrapper > #cake3 {
+    display: block;
   }
-
-  #fork3check:checked ~ #cakewrapper {
-    background-image: url(Cake_State4.png);
+  
+  #fork4check:checked ~ #cakewrapper > #cake4 {
+    display: block;
   }
-
+  
   #fork4check:checked ~ #forkwrapper > #fork4label {
-    display: none;
+    display: block;
   }
-
-  #fork4check:checked ~ #forkwrapper {
-    top: 400px;
-    transition: 1s;
+  
+  #fork5check:checked ~ #cakewrapper > #cake5 {
+    display: block;
   }
-
-  #fork4check:checked ~ #cakewrapper {
-    background-image: url(Cake_State5.png);
-  }
-
+  
   #fork5check:checked ~ #forkwrapper > #fork5label {
-    display: none;
+    display: block;
   }
 
-  #fork5check:checked ~ #forkwrapper {
-    top: 450px;
-    transition: 1s;
-  }
-
-  #fork5check:checked ~ #cakewrapper {
-    background-image: url(Cake_State5.png);
-  }
-
-  #cakewrapper #stillhungry { /* why not showing*/
+  #stillhungry { 
     position: fixed; /*how to center*/
-    left: 40vh;
-    top: 40vh;
+    right: calc(20vw - 25vh);
+    top: 20vh;
+    width: 500px;
+    height: 500px;
     background-image: url(stillhungry.png);
+    background-size: 500px;
+    z-index: 1;
   }
 
-  #cakewrapper #stillhungry:hover {
-    position: fixed; /*how to center*/
-    left: 40vh;
-    top: 40vh;
+  #stillhungry:hover {
     background-image: url(stillhungryhover.png);
+    cursor: grab;
+  }
+
+  #layers {
+    position:absolute;
+    left: 15vw;
+    top:calc(50vh - 11vw);
+    z-index: 0;
+    width: 30vw;
+    height: 35vh;
+    background-size: 35vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(Layers.png);
+  }
+
+  #layers:hover {
+    cursor: not-allowed;
+    background-image: url(LayersHover.png);
   }

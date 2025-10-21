@@ -5,35 +5,45 @@
 
 
 <!--need to add indication of both earth layer and flavor
-Either draw or add flashing text...-->
+Either draw or add flashing text...mayve when holding to eat the flavor is jumping
+out like matcha organic layer matcha organic layer matcha matcha-->
+
 <body>
     <h1 style="text-align:center">IF THE EARTH WAS A CAKE.</h1>
 
-    <input type="checkbox" id="fork1check">
-    <input type="checkbox" id="fork2check">
-    <input type="checkbox" id="fork3check">
-    <input type="checkbox" id="fork4check">
-    <input type="checkbox" id="fork5check">
-
+    <input type="radio" id="fork1check" name="cakeradio" checked>
+    <input type="radio" id="fork2check" name="cakeradio">
+    <input type="radio" id="fork3check" name="cakeradio">
+    <input type="radio" id="fork4check" name="cakeradio">
+    <input type="radio" id="fork5check" name="cakeradio">
 
     <div id="forkwrapper">
-        <label for="fork5check" id="fork5label">
+        <label for="fork2check" id="fork1label">
             <div id="fork"></div>
         </label>
-        <label for="fork4check" id="fork14abel">
+        <label for="fork3check" id="fork2label">
             <div id="fork"></div>
         </label>
-        <label for="fork3check" id="fork3label">
+        <label for="fork4check" id="fork3label">
             <div id="fork"></div>
         </label>
-        <label for="fork2check" id="fork2label">
+        <label for="fork5check" id="fork4label">
             <div id="fork"></div>
         </label>
-        <label for="fork1check" id="fork1label">
-            <div id="fork"></div>
+        <label for="fork1check" id="fork5label">
+            <div id="stillhungry"></div>
         </label>
     </div>
 
-    <div id="cakewrapper"></div>
-    <div id="cakewrapper stilhungry"></div>
+    <div id="cakewrapper">
+        <img src="CakeFull_State1.png" id="cake1">
+        <img src="Cake_State2.png" id="cake2">
+        <img src="Cake_State3.png" id="cake3">
+        <img src="Cake_State4.png" id="cake4">
+        <img src="Cake_State5.png" id="cake5">
+    </div>
+
+    <div id="layers">
+    </div>
+
 </body>
