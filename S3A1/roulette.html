@@ -1,1 +1,44 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--help uploading to github??-->
+<!--how to position these images further down, 
+also improve campfire and chandelier drawing-->
+<body>
+    <div class="startbutton" style= "text-align: center">CLICK ME</div>
+    <div class="banner">
+        <div class="slider" style="--quantity: 7">
+            <div class="item" onclick="playCandle()" style="--position: 1">
+                <img src="candle.png" alt = "candle">
+            </div>
+            <div class="item" onclick="playFluo()" style="--position: 2">
+                <img src="fluorescent.png" alt = "fluorescent">
+            </div>
+            <div class="item" onclick="playCamp()" style="--position: 3">
+                <img src="campfire.png" alt = "campfire">
+            </div>
+            <div class="item" onclick="playMoon()" style="--position: 4">
+                <img src="moon.png" alt = "moon">
+            </div>
+            <div class="item" onclick="playChand()" style="--position: 5">
+                <img src="chandelier.png" alt = "chandelier">
+            </div>
+            <div class="item" onclick="playIncense()" style="--position: 6">
+                <img src="incense.png" alt = "incense">
+            </div>
+            <div class="item" onclick="playLava()" style="--position: 7">
+                <img src="lavalamp.png" alt = "lavalamp">
+            </div>
+        </div>
+    </div>
+    <audio controls autoplay src="candle.wav" id="candlesound"></audio>
+    <audio controls autoplay src="fluorescent.ogg" id="fluorescentsound"></audio>
+    <audio controls autoplay src="campfire.wav" id="campsound"></audio>
+    <audio controls autoplay src="moon.mp3" id="moonsound"></audio>
+    <audio controls autoplay src="chandelier.wav" id="chandsound"></audio>
+    <audio controls autoplay src="match.wav" id="matchsound"></audio>
+    <audio controls autoplay src="lavalamp.flac" id="lavasound"></audio>
+    <script src="sounds.js"></script>
+</body>
 
