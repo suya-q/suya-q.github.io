@@ -75,6 +75,21 @@ h1 {
     letter-spacing: 20px;
 }
 
+.workflow-box {
+    background-color: #f7e9d3; /* pick any color */
+    padding: 20px;            /* space between image and box edges */
+    border-radius: 20px;      /* optional rounded corners */
+    width: fit-content;       /* shrink to fit image */
+    margin: 0 auto;           /* center the box */
+}
+
+.workflow-box img {
+    display: block;
+    width: 60vw; /* your original size */
+    height: auto;
+}
+
+
 .button {
     border: black;
     color: black;
@@ -102,4 +117,5 @@ h1 {
   .bottomborder {
     background-color: rgb(242, 176, 235);
     font-size: 11px;
+    font-family: 'amiko';
   }
