@@ -1,0 +1,127 @@
+body {
+    background-color: rgb(16, 30, 87);
+    color: rgb(238, 228, 35);
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.box {
+    position: absolute;
+    width: 10vh;
+    height: 10vh;
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+}
+
+.box a img {
+    width: 100%;
+}
+.toprow {
+    top: 30vh;
+}
+
+.middlerow {
+    top: 50vh;
+}
+
+.bottomrow {
+    top: 70vh;
+}
+
+.leftcol {
+    left: 30vw;
+}
+
+.middlecol {
+    left: 50vw;
+}
+
+.rightcol {
+    left: 70vw;
+}
+
+.S1FP {
+    background-color: #4290FF;
+    perspective: 800px;
+}
+
+/*um...WIP*/
+.S1FP .lid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%; /* lid height - tweak as desired */
+    background-color: #1c71d8; 
+    transform-origin: top center;
+    transform: rotateX(0deg);
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.5s cubic-bezier(0.25, 1.6, 0.25, 1);
+    /* hinge easing curve */
+}
+
+.S1FP .inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: visible; /* icon pops out */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none; /* ensures hover remains on box */
+}
+
+.S1FP .icon {
+    width: 80%;
+    opacity: 0;
+    transform: translateY(20px) scale(0.3);
+    transition: 
+        opacity 0.25s ease-out,
+        transform 0.6s cubic-bezier(.34,1.56,.64,1);
+}
+
+.S1FP:hover .icon {
+    opacity: 1;
+    transform: translateY(-60px) scale(1);
+}
+
+.S1FP:hover .lid {
+    transform: rotateX(-110deg);
+}
+
+.S1FP-title-layer {
+    position: absolute;
+    top: 100vh; 
+    width: 100%;
+    height: 100vh;
+
+    background: #4290FF;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 4rem;
+
+    opacity: 0;
+    transform: translateY(100vh);
+    transition: opacity 0.3s ease;
+}
+
+
+
+.S2A2 {
+    background-color: #E0CAAD;
+}
+
+.S3A1 {
+    background-color: black;
+}
+
+.S1FP .lid,
+.S1FP .icon {
+    pointer-events: none;
+}
