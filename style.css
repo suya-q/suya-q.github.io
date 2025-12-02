@@ -1,9 +1,9 @@
 body {
-    background-color: rgb(16, 30, 87);
+    background-color: rgb(255, 255, 255);
     color: rgb(238, 228, 35);
     min-height: 100vh;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 .box {
@@ -18,7 +18,7 @@ body {
     width: 100%;
 }
 .toprow {
-    top: 30vh;
+    top: 25vh;
 }
 
 .middlerow {
@@ -26,7 +26,7 @@ body {
 }
 
 .bottomrow {
-    top: 70vh;
+    top: 75vh;
 }
 
 .leftcol {
@@ -47,7 +47,7 @@ body {
 }
 
 /*um...WIP*/
-.S1FP .lid {
+.box .lid {
     position: absolute;
     top: 0;
     left: 0;
@@ -62,7 +62,7 @@ body {
     /* hinge easing curve */
 }
 
-.S1FP .inner {
+.inner {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -73,7 +73,7 @@ body {
     pointer-events: none; /* ensures hover remains on box */
 }
 
-.S1FP .icon {
+ .icon {
     width: 80%;
     opacity: 0;
     transform: translateY(20px) scale(0.3);
@@ -82,16 +82,16 @@ body {
         transform 0.6s cubic-bezier(.34,1.56,.64,1);
 }
 
-.S1FP:hover .icon {
+.box:hover .icon {
     opacity: 1;
     transform: translateY(-60px) scale(1);
 }
 
-.S1FP:hover .lid {
+.box:hover .lid {
     transform: rotateX(-110deg);
 }
 
-.S1FP-title-layer {
+/*.S1FP-title-layer {
     position: absolute;
     top: 100vh; 
     width: 100%;
@@ -109,19 +109,35 @@ body {
     opacity: 0;
     transform: translateY(100vh);
     transition: opacity 0.3s ease;
-}
+}*/
 
 
 
 .S2A2 {
-    background-color: #E0CAAD;
+    background-color: #73a963;
 }
 
-.S3A1 {
+.S2FP {
     background-color: black;
 }
 
-.S1FP .lid,
-.S1FP .icon {
-    pointer-events: none;
+.S3A1 {
+    background-color: #fca33a;
+}
+
+.S3A2 {
+    background-color: #f198e8;
+}
+
+.S3FP {
+    background-color: #2fcfaf;
+}
+
+
+.S1A1 {
+    background-color: #0c4169;
+}
+
+.S1A2 {
+    background-color: #C92222;
 }
