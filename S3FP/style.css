@@ -1,0 +1,39 @@
+html,
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: absolutel
+}
+
+body:hover {
+    background-color: rgb(50, 128, 88);
+}
+
+body:focus {
+    z-index: 2;
+}
+
+#instruction {
+    position: absolute;
+    top: 0;
+}
+
+audio {
+    display: none;
+}
+
+@font-face {
+    font-family: 'Swantime';
+    src: url('Swantime-Regular.ttf') format('truetype');
+    /* Path to your font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font-family: 'Swantime';
+    color: rgb(50, 128, 88);
+}
