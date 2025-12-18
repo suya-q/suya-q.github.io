@@ -330,3 +330,14 @@ a:link {
     top: 40vh;
     text-align: center;
   }
+  
+  [id^="s"] {
+    pointer-events: none;
+  }
+  
+  [id^="s"]:target {
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  
