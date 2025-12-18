@@ -4,7 +4,7 @@ html {
 body {
     margin: 0;
     background-color: rgb(255, 255, 255);
-    color: rgb(238, 228, 35);
+    color: rgb(175, 208, 67);
     min-height: 100vh;
     overflow-x: hidden;
     /* overflow-y: hidden; */
@@ -19,6 +19,13 @@ body {
     perspective: 1000px;
     transition: 1s;
 }
+
+.textbox {
+    position: fixed;
+    width: 35vw;
+    top: 50vh;
+    left: 10vw;
+  }
 
 .box a img {
     width: 100%;
